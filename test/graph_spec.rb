@@ -111,7 +111,7 @@ describe Graph do
         expect(graph.valid_path? []).to eq true
       end
       context 'on tree paths' do
-        it 'returns true on a tree path' do
+        it 'returns true on a valid path' do
           path = [:b,:a,:c,:f,:d]
           expect(graph.valid_path? path).to eq true
         end
